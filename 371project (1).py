@@ -47,6 +47,8 @@ mq = np.zeros_like(message1) #quantized message
 mp_p = 2
 mp_n = -2 #max and min values
 
+#output: 110000-001111-001001-100000-001100-010100-110101-100101-100111-111101
+
 #PCM:
 
 L = 64
@@ -97,3 +99,5 @@ for i, sampled_signal in enumerate(message2[1:]):
 
 out2 = [outt[i] for i in range(20)]
 print(*out2, sep = "-")
+
+#output: 0-1-1-1-1-0-1-0-0-0-1-0-1-0-1-1-1-0-0-1
